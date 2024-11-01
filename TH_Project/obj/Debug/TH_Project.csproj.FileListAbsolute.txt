@@ -1,0 +1,166 @@
+D:\C#\TH_Project\TH_Project\bin\TH_Project.dll.config
+D:\C#\TH_Project\TH_Project\bin\TH_Project.dll
+D:\C#\TH_Project\TH_Project\bin\TH_Project.pdb
+D:\C#\TH_Project\TH_Project\bin\roslyn\csc.exe
+D:\C#\TH_Project\TH_Project\bin\roslyn\csc.exe.config
+D:\C#\TH_Project\TH_Project\bin\roslyn\csc.rsp
+D:\C#\TH_Project\TH_Project\bin\roslyn\csi.exe
+D:\C#\TH_Project\TH_Project\bin\roslyn\csi.exe.config
+D:\C#\TH_Project\TH_Project\bin\roslyn\csi.rsp
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.Managed.Core.targets
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\TH_Project\TH_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.AppContext.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Console.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Globalization.Calendars.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.IO.Compression.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.IO.FileSystem.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Net.Http.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Net.Sockets.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.ValueTuple.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Xml.XPath.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C#\TH_Project\TH_Project\bin\roslyn\vbc.exe
+D:\C#\TH_Project\TH_Project\bin\roslyn\vbc.exe.config
+D:\C#\TH_Project\TH_Project\bin\roslyn\vbc.rsp
+D:\C#\TH_Project\TH_Project\bin\roslyn\VBCSCompiler.exe
+D:\C#\TH_Project\TH_Project\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\TH_Project\TH_Project\bin\Antlr3.Runtime.dll
+D:\C#\TH_Project\TH_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\TH_Project\TH_Project\bin\Microsoft.Web.Infrastructure.dll
+D:\C#\TH_Project\TH_Project\bin\Newtonsoft.Json.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.Helpers.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.Mvc.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.Optimization.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.Razor.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.Deployment.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.Razor.dll
+D:\C#\TH_Project\TH_Project\bin\WebGrease.dll
+D:\C#\TH_Project\TH_Project\bin\System.Web.Helpers.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.Mvc.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.Optimization.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.Razor.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.Deployment.xml
+D:\C#\TH_Project\TH_Project\bin\System.Web.WebPages.Razor.xml
+D:\C#\TH_Project\TH_Project\bin\Newtonsoft.Json.xml
+D:\C#\TH_Project\TH_Project\bin\Antlr3.Runtime.pdb
+D:\C#\TH_Project\TH_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\TH_Project\TH_Project\obj\Debug\TH_Project.csproj.AssemblyReference.cache
+D:\C#\TH_Project\TH_Project\obj\Debug\TH_Project.csproj.CoreCompileInputs.cache
+D:\C#\TH_Project\TH_Project\obj\Debug\TH_Project.csproj.Up2Date
+D:\C#\TH_Project\TH_Project\obj\Debug\TH_Project.dll
+D:\C#\TH_Project\TH_Project\obj\Debug\TH_Project.pdb
+D:\C#\TH_Project\TH_Project\bin\EntityFramework.dll
+D:\C#\TH_Project\TH_Project\bin\EntityFramework.xml
+D:\C#\TH_Project\TH_Project\bin\EntityFramework.SqlServer.dll
+D:\C#\TH_Project\TH_Project\bin\EntityFramework.SqlServer.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\TH_Project.dll.config
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\TH_Project.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\TH_Project.pdb
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csc.exe
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csc.exe.config
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csc.rsp
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csi.exe
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csi.exe.config
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\csi.rsp
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.AppContext.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Collections.Immutable.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Console.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.IO.Compression.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.IO.FileSystem.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Net.Http.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Net.Sockets.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.ValueTuple.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Xml.XPath.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\vbc.exe
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\vbc.exe.config
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\vbc.rsp
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\VBCSCompiler.exe
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\roslyn\VBCSCompiler.exe.config
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Antlr3.Runtime.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\EntityFramework.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\EntityFramework.SqlServer.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Microsoft.Web.Infrastructure.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Newtonsoft.Json.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Helpers.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Mvc.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Optimization.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Razor.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.Deployment.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.Razor.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\WebGrease.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\EntityFramework.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\EntityFramework.SqlServer.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Helpers.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Mvc.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Optimization.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.Razor.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.Deployment.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\System.Web.WebPages.Razor.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Newtonsoft.Json.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Antlr3.Runtime.pdb
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.csproj.AssemblyReference.cache
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.csproj.CoreCompileInputs.cache
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.csproj.Up2Date
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.pdb

@@ -1,0 +1,187 @@
+﻿@model TH_Project.ViewModel.HomeVM
+
+<style>
+    .category_section {
+        display: flex;
+        flex-direction: row; /* Hiển thị theo hàng ngang */
+        padding: 20px;
+    }
+
+    .cate_pick {
+        width: 30%; /* Chiếm 30% chiều rộng */
+    }
+
+    .category-list {
+        list-style-type: none; /* Bỏ dấu đầu dòng */
+        padding: 0; /* Bỏ padding mặc định */
+    }
+
+    .category-item {
+        margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    }
+
+  
+</style>
+
+
+
+<!-- end slider section -->
+
+<section class="slider_section ">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-box">
+                                <h5>
+                                    Bostorek Bookstore
+                                </h5>
+                                <h1>
+                                    For All Your <br>
+                                    Reading Needs
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-box">
+                                <img src="images/slider-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-box">
+                                <h5>
+                                    Bostorek Bookstore
+                                </h5>
+                                <h1>
+                                    For All Your <br>
+                                    Reading Needs
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-box">
+                                <img src="images/slider-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-box">
+                                <h5>
+                                    Bostorek Bookstore
+                                </h5>
+                                <h1>
+                                    For All Your <br>
+                                    Reading Needs
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-box">
+                                <img src="images/slider-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel_btn_box">
+            <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="category_section layout_padding" style="display: flex;">
+    <div class="cate_pick">
+        <h3>Chủ đề sách</h3>
+        <ul class="category-list">
+            @foreach (var item in Model.cHUDEs)
+            {
+                <li class="category-item">
+                    @Html.ActionLink(item.TenChuDe, "Index", "Product", new { idCD = item.MaCD }, null)
+
+                </li>
+            }
+        </ul>
+
+        <h3>Nhà xuất bản</h3>
+        <ul class="category-list">
+            @foreach (var item in Model.nxb)
+            {
+                <li class="category-item">
+                    @Html.ActionLink(item.TenNXB, "Index", "Product", new { idNXB = item.MaNXB }, null)
+
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="container" style="text-align: center;">
+        <h3 style="color: darkred">SÁCH MỚI</h3>
+        <div class="row">
+            @foreach (var item in Model.SACHes)
+            {
+                <div class="col-md-4 mb-4">
+                    <a href="@Url.Action("ProductDetail", "Product", new { id = item.Masach })" class="item card text-center" style="text-decoration: none;">
+                        <img src="@item.Anhbia" class="card-img-top" alt="@item.Tensach" />
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Tensach</h5>
+                            <p class="card-text">@item.Giaban</p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<!-- catagory section -->
+
+
+
+<!-- end about section -->
+<!-- client section -->
+
+
