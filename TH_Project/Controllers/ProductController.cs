@@ -25,7 +25,8 @@ namespace TH_Project.Controllers
         [HttpGet]
         public async Task<ActionResult> Index(int? idNXB, int? idCD)
         {
-            var products = new ProductVM() { 
+            var products = new ProductVM()
+            {
                 cHUDEs = await _db.CHUDEs.ToListAsync(),
                 nxb = await _db.NHAXUATBANs.ToListAsync()
             };
@@ -40,10 +41,10 @@ namespace TH_Project.Controllers
             }
             else
             {
-                products.SACHes = await _db.SACHes.ToListAsync(); 
+                products.SACHes = await _db.SACHes.ToListAsync();
             }
 
-            return View(products); 
+            return View(products);
         }
 
         [HttpGet]
@@ -60,7 +61,7 @@ namespace TH_Project.Controllers
 
             if (product == null)
             {
-                return HttpNotFound(); 
+                return HttpNotFound();
             }
 
             return View(productVM);

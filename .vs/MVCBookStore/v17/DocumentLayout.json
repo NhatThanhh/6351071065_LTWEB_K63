@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\views\\nguoidung\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\views\\nguoidung\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\views\\nguoidung\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\views\\nguoidung\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\views\\giohang\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\views\\giohang\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\views\\giohang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\views\\giohang\\dathang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|e:\\l\u1EADp tr\u00ECnh web\\thuchanhweb-main\\thuchanhweb-main\\th_project\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A86C59F6-22AB-4EB4-B1ED-2610E72606DC}|TH_Project\\TH_Project.csproj|solutionrelative:th_project\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GioHang.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\GioHang\\GioHang.cshtml",
+              "RelativeDocumentMoniker": "TH_Project\\Views\\GioHang\\GioHang.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\GioHang\\GioHang.cshtml",
+              "RelativeToolTip": "TH_Project\\Views\\GioHang\\GioHang.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:55:26.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dangky.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\Nguoidung\\Dangky.cshtml",
+              "RelativeDocumentMoniker": "TH_Project\\Views\\Nguoidung\\Dangky.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\Nguoidung\\Dangky.cshtml",
+              "RelativeToolTip": "TH_Project\\Views\\Nguoidung\\Dangky.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAiwHEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:31:39.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dangnhap.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\Nguoidung\\Dangnhap.cshtml",
+              "RelativeDocumentMoniker": "TH_Project\\Views\\Nguoidung\\Dangnhap.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\Nguoidung\\Dangnhap.cshtml",
+              "RelativeToolTip": "TH_Project\\Views\\Nguoidung\\Dangnhap.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAowFMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:30:58.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GioHangController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Controllers\\GioHangController.cs",
+              "RelativeDocumentMoniker": "TH_Project\\Controllers\\GioHangController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Controllers\\GioHangController.cs",
+              "RelativeToolTip": "TH_Project\\Controllers\\GioHangController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:39:14.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NguoidungController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Controllers\\NguoidungController.cs",
+              "RelativeDocumentMoniker": "TH_Project\\Controllers\\NguoidungController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Controllers\\NguoidungController.cs",
+              "RelativeToolTip": "TH_Project\\Controllers\\NguoidungController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAADwv6QAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:31:46.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "TH_Project\\App_Start\\RouteConfig.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "TH_Project\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:46:34.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatHang.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\GioHang\\DatHang.cshtml",
+              "RelativeDocumentMoniker": "TH_Project\\Views\\GioHang\\DatHang.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Views\\GioHang\\DatHang.cshtml",
+              "RelativeToolTip": "TH_Project\\Views\\GioHang\\DatHang.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAowI4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:25:02.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "TH_Project\\Models\\GioHang.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web\\ThucHanhWeb-main\\ThucHanhWeb-main\\TH_Project\\Models\\GioHang.cs",
+              "RelativeToolTip": "TH_Project\\Models\\GioHang.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:42:38.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

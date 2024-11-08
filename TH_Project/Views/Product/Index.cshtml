@@ -18,9 +18,13 @@
         list-style-type: none; 
         padding: 0; 
     }
-
+    
     .category-item {
         margin-bottom: 10px;
+    }
+    .col-md-4 img{
+        width: 100%;
+        height: auto;
     }
 </style>
 
@@ -53,6 +57,7 @@
     </div>
 
     <div class="container" style="text-align: center;">
+         <img src="~/Content/images/banner-hoi-sach.jpg" alt="aaa" style="width: 100%; height: auto;">
         <h3 style="color: darkred">SÁCH MỚI</h3>
         <div class="row">
             @foreach (var item in Model.SACHes)
@@ -68,9 +73,6 @@
                 </div>
             }
         </div>
-
-
-
     </div>
 
 </section>

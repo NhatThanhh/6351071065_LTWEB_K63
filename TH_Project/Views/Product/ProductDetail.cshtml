@@ -1,31 +1,33 @@
-﻿@{
+﻿﻿@{
     ViewBag.Title = "Chi Tiết Sản Phẩm";
-    var product = ViewBag.Product; 
+    /*var product = ViewBag.Product;*/ // Giả sử bạn đã truyền sản phẩm từ controller vào ViewBag
 }
 @model TH_Project.ViewModel.DetailProductVM
+
 <style>
     .category_section {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row; /* Hiển thị theo hàng ngang */
         padding: 20px;
     }
 
     .cate_pick {
-        width: 30%; 
+        width: 30%; /* Chiếm 30% chiều rộng */
     }
 
     .category-list {
-        list-style-type: none; 
-        padding: 0; 
+        list-style-type: none; /* Bỏ dấu đầu dòng */
+        padding: 0; /* Bỏ padding mặc định */
     }
 
     .category-item {
-        margin-bottom: 10px; 
+        margin-bottom: 10px; /* Khoảng cách giữa các mục */
     }
 </style>
 
 
 
+<!-- end slider section -->
 
 
 
@@ -58,7 +60,6 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                @*<img src=@Model.SACH.Anhbia alt="@Model.SACH.Tensach" class="img-fluid" />*@
                 <img src="~/Content/images/@Model.SACH.Anhbia" alt="@Model.SACH.Tensach" class="img-fluid" />
             </div>
             <div class="col-md-6">
@@ -77,7 +78,4 @@
 <!-- catagory section -->
 <!-- end about section -->
 <!-- client section -->
-
-
-
-    
+﻿

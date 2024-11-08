@@ -60,12 +60,53 @@
                     </div>
                 </nav>
             </div>
-            <img src="~/Content/images/banner-hoi-sach.jpg" alt="aaa" style="width: 100%; height: auto;">
+
 
         </header>
-
-
         @RenderBody()
+
+        @*<section class="category_section layout_padding" style="display: flex;">
+            <div class="cate_pick">
+                <h3>Chủ đề sách</h3>
+                @if (Model?.cHUDEs != null && Model.cHUDEs.Any())
+                {
+                    <ul class="category-list">
+                        @foreach (var item in Model.cHUDEs)
+                        {
+                            <li class="category-item">
+                                @Html.ActionLink(item.TenChuDe, "Index", "Product", new { idCD = item.MaCD }, null)
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>Không có chủ đề nào được tìm thấy.</p>
+                }
+
+                <h3>Nhà xuất bản</h3>
+                @if (Model?.nxb != null && Model.nxb.Any())
+                {
+                    <ul class="category-list">
+                        @foreach (var item in Model.nxb)
+                        {
+                            <li class="category-item">
+                                @Html.ActionLink(item.TenNXB, "Index", "Product", new { idNXB = item.MaNXB }, null)
+                            </li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>Không có nhà xuất bản nào được tìm thấy.</p>
+                }
+            </div>
+            <div class="container">
+               
+
+            </div>
+        </section>*@
+
 
         <!-- end info section -->
         <!-- footer section -->
