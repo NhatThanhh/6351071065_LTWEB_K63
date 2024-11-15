@@ -1,12 +1,12 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
-.layout_padding {
+/*.layout_padding {
   padding: 90px 0;
 }
 
@@ -23,12 +23,12 @@ body {
 }
 
 .layout_padding-top {
-  padding-top: 90px;
+  padding-top: 20px;
 }
 
 .layout_padding-bottom {
   padding-bottom: 90px;
-}
+}*/
 
 .heading_container {
   display: -webkit-box;
@@ -96,7 +96,7 @@ a:focus {
 
 .header_section {
   background-color:#3eaf8c;
-  padding: 15px 0;
+  padding: 0;
 }
 
 .top_nav_container {
@@ -183,7 +183,6 @@ a:focus {
   width: 35px;
   height: 4px;
   background-color: #ffffff;
-  margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;

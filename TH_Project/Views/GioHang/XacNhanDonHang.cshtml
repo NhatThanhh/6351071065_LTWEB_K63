@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "XacNhanDonHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .Loicamon {
+        margin-bottom: 20px; 
+        height: 40%;
+    }
+
+        .Loicamon h2 {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+    p {
+        text-align: center;
+    }
+
+        p a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            p a:hover {
+                background-color: #0056b3;
+            }
+
+
+</style>
+
+<div class="Loicamon">
+    <h2>
+        Đơn hàng của của quý khách đã được chúng tôi ghi nhận.
+        Chúng tôi sẽ liên hệ quý khách trong thời gian sớm nhất và giao hàng đúng hẹn.
+    </h2>
+    <p>
+        @Html.ActionLink("VỀ TRANG CHỦ", "Index", "Home")
+    </p>
+</div>
+

@@ -8,7 +8,7 @@ namespace TH_Project.Models
 {
     public class GioHang
     {
-        QLBANSACHEntities db = new QLBANSACHEntities();
+        QLBANSACHEntities2 db = new QLBANSACHEntities2();
         public int iMaSach { get; set; }
         public string sTenSach { get; set; }
         public string sAnhBia { get; set; }

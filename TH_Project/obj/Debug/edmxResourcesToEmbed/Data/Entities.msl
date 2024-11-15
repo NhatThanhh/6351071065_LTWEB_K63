@@ -34,23 +34,23 @@
     <EntitySetMapping Name="KHACHHANGs">
       <EntityTypeMapping TypeName="QLBANSACHModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="DienthoaiKH" ColumnName="DienthoaiKH" />
+          <ScalarProperty Name="DiachiKH" ColumnName="DiachiKH" />
+          <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+          <ScalarProperty Name="Taikhoan" ColumnName="Taikhoan" />
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
-          <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
-          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
           <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="DiaChiKH" ColumnName="DiaChiKH" />
-          <ScalarProperty Name="DienThoaiKH" ColumnName="DienThoaiKH" />
-          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NHAXUATBANs">
       <EntityTypeMapping TypeName="QLBANSACHModel.NHAXUATBAN">
         <MappingFragment StoreEntitySet="NHAXUATBAN">
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
           <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
           <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
-          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -78,6 +78,16 @@
           <ScalarProperty Name="Diachi" ColumnName="Diachi" />
           <ScalarProperty Name="Tieusu" ColumnName="Tieusu" />
           <ScalarProperty Name="Dienthoai" ColumnName="Dienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIETSACHes">
+      <EntityTypeMapping TypeName="QLBANSACHModel.VIETSACH">
+        <MappingFragment StoreEntitySet="VIETSACH">
+          <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+          <ScalarProperty Name="Vaitro" ColumnName="Vaitro" />
+          <ScalarProperty Name="Masach" ColumnName="Masach" />
+          <ScalarProperty Name="MaTG" ColumnName="MaTG" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

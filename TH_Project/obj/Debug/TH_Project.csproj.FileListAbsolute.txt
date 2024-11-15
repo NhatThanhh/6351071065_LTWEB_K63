@@ -164,3 +164,7 @@ E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Pr
 E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.csproj.Up2Date
 E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.dll
 E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\obj\Debug\TH_Project.pdb
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\PagedList.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\PagedList.Mvc.dll
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\PagedList.xml
+E:\Lập trình web\ThucHanhWeb-main\ThucHanhWeb-main\TH_Project\bin\PagedList.Mvc.xml

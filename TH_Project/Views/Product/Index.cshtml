@@ -2,63 +2,16 @@
     ViewBag.Title = "Index";
 }
 @model TH_Project.ViewModel.ProductVM
-<style>
-    .category_section {
-        display: flex;
-        flex-direction: row; 
-        padding: 40px;
-        color: black;
-    }
 
-    .cate_pick {
-        width: 30%; 
-    }
-
-    .category-list {
-        list-style-type: none; 
-        padding: 0; 
-    }
-    
-    .category-item {
-        margin-bottom: 10px;
-    }
-    .col-md-4 img{
-        width: 100%;
-        height: auto;
-    }
-</style>
 
 
 
 
 <section class="category_section layout_padding" style="display: flex;">
-    <div class="cate_pick">
-        <h3>Chủ đề sách</h3>
-        <ul class="category-list">
-            @foreach (var item in Model.cHUDEs)
-            {
-                <li class="category-item">
-                    @Html.ActionLink(item.TenChuDe, "Index", "Product", new { idCD = item.MaCD }, null)
-
-                </li>
-            }
-        </ul>
-
-        <h3>Nhà xuất bản</h3>
-        <ul class="category-list">
-            @foreach (var item in Model.nxb)
-            {
-                <li class="category-item">
-                    @Html.ActionLink(item.TenNXB, "Index", "Product", new { idNXB = item.MaNXB }, null)
-
-                </li>
-            }
-        </ul>
-    </div>
 
     <div class="container" style="text-align: center;">
-         <img src="~/Content/images/banner-hoi-sach.jpg" alt="aaa" style="width: 100%; height: auto;">
-        <h3 style="color: darkred">SÁCH MỚI</h3>
+         <img src="~/Content/images/banner-hoi-sach.jpg" alt="aaa" style="width: 100%; height: 10%; padding-bottom: 15px">
+        <h3 style="color: darkred; font-family:'Times New Roman', Times, serif">SÁCH MỚI</h3>
         <div class="row">
             @foreach (var item in Model.SACHes)
             {

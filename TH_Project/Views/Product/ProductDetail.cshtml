@@ -4,26 +4,6 @@
 }
 @model TH_Project.ViewModel.DetailProductVM
 
-<style>
-    .category_section {
-        display: flex;
-        flex-direction: row; /* Hiển thị theo hàng ngang */
-        padding: 20px;
-    }
-
-    .cate_pick {
-        width: 30%; /* Chiếm 30% chiều rộng */
-    }
-
-    .category-list {
-        list-style-type: none; /* Bỏ dấu đầu dòng */
-        padding: 0; /* Bỏ padding mặc định */
-    }
-
-    .category-item {
-        margin-bottom: 10px; /* Khoảng cách giữa các mục */
-    }
-</style>
 
 
 
@@ -33,29 +13,6 @@
 
 
 <section class="category_section layout_padding" style="display: flex;">
-    <div class="cate_pick">
-        <h3>Chủ đề sách</h3>
-        <ul class="category-list">
-            @foreach (var item in Model.cHUDEs)
-            {
-                <li class="category-item">
-                    @Html.ActionLink(item.TenChuDe, "Index", "Product", new { idCD = item.MaCD }, null)
-
-                </li>
-            }
-        </ul>
-
-        <h3>Nhà xuất bản</h3>
-        <ul class="category-list">
-            @foreach (var item in Model.nxb)
-            {
-                <li class="category-item">
-                    @Html.ActionLink(item.TenNXB, "Index", "Product", new { idNXB = item.MaNXB }, null)
-
-                </li>
-            }
-        </ul>
-    </div>
 
     <div class="container mt-5">
         <div class="row">
@@ -67,7 +24,7 @@
                 <h4>Giá: @Model.SACH.Giaban</h4>
                 <p><strong>Mô tả:</strong> @Model.SACH.Mota</p>
 
-                <button class="btn btn-primary mt-3" id="addToCart">Thêm vào giỏ hàng</button>
+                <div id="Datmua"> <a href="@Url.Action("ThemGioHang", "GioHang", new { @iMasach = @Model.SACH.Masach, @strURL = "GioHang" })" class="btn btn-primary mt-3"> Thêm vào giỏ hàng </a> </div>
             </div>
         </div>
     </div>

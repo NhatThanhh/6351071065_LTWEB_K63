@@ -25,6 +25,44 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <style>
+        .category_section {
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+            color: black;
+        }
+
+        .cate_pick {
+            width: 30%;
+        }
+
+        .category-list {
+
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-item {
+            border: solid 1px grey;
+            padding: 10px;
+            width: 70%;
+            background-color: #d0fff0;
+        }
+        .category-item:hover {
+                background-color: #85bcaa;
+        }
+        .category-item a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .col-md-4 img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,6 +94,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="@Url.Action("Index", "Product")">Contact </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("GioHang", "GioHang")">
+                                    <i class="fa fa-shopping-cart" style="font-size: 24px;" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Dangnhap", "Nguoidung")">Login</a>
+                            </li>
+
                         </ul>
                     </div>
                 </nav>
@@ -63,9 +111,45 @@
 
 
         </header>
-        @RenderBody()
+       <section class="category_section layout_padding" style="display: flex;">
+            <div class="cate_pick">
+                <h3 style="font-family:'Times New Roman', Times, serif; color: #722222">Chủ đề sách</h3>
+                <ul class="category-list">
+                    @if (ViewData["Chude"] != null)
+                    {
+                        var chudeList = ViewData["Chude"] as List<TH_Project.Data.CHUDE>;
+                        foreach (var item in chudeList)
+                        {
+                            <li class="category-item">
+                                @Html.ActionLink(item.TenChuDe, "Index", "Product", new { idCD = item.MaCD }, null)
+                            </li>
+                        }
+                    }
+                </ul>
 
-        @*<section class="category_section layout_padding" style="display: flex;">
+                <h3 style="font-family:'Times New Roman', Times, serif; color: #722222">Nhà xuất bản</h3>
+                <ul class="category-list">
+                    @if (ViewData["NXB"] != null)
+                    {
+                        var nxbList = ViewData["NXB"] as List<TH_Project.Data.NHAXUATBAN>;
+                        foreach (var item in nxbList)
+                        {
+                            <li class="category-item">
+                                @Html.ActionLink(item.TenNXB, "Index", "Product", new { idNXB = item.MaNXB }, null)
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+
+
+
+
+            @RenderBody()
+
+        </section>
+
+    @*<section class="category_section layout_padding" style="display: flex;">
             <div class="cate_pick">
                 <h3>Chủ đề sách</h3>
                 @if (Model?.cHUDEs != null && Model.cHUDEs.Any())
@@ -102,35 +186,35 @@
                 }
             </div>
             <div class="container">
-               
+
 
             </div>
         </section>*@
 
 
-        <!-- end info section -->
-        <!-- footer section -->
-        <footer class="footer_section">
-            <div class="container">
-                <p>
-                    Copyright - Dương Thành Phết - 2015
-                </p>
-            </div>
-        </footer>
-        <!-- footer section -->
-        <!-- jQuery -->
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="~/Scripts/js/jquery-3.4.1.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="js/bootstrap.js"></script>
-        <script src="~/Scripts/js/bootstrap.js"></script>
-        <!-- custom js -->
-        <script src="js/custom.js"></script>
-        <script src="~/Scripts/js/custom.js"></script>
-        <!-- Google Map -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!-- End Google Map -->
+    <!-- end info section -->
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                Copyright - Dương Thành Phết - 2015
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <script src="~/Scripts/js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="~/Scripts/js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- End Google Map -->
 
 </body>
 

@@ -12,12 +12,12 @@ namespace TH_Project.Controllers
 {
     public class NguoidungController : Controller
     {
-            private readonly QLBANSACHEntities _db;
-            public NguoidungController(QLBANSACHEntities db)
+            private readonly QLBANSACHEntities2 _db;
+            public NguoidungController(QLBANSACHEntities2 db)
             {
                 _db = db;
             }
-            public NguoidungController() : this(new QLBANSACHEntities())
+            public NguoidungController() : this(new QLBANSACHEntities2())
             {
             }
             // GET: Product
@@ -42,23 +42,24 @@ namespace TH_Project.Controllers
                 {
                     products.SACHes = await _db.SACHes.ToListAsync();
                 }
-
-                return View(products);
+            ViewData["Chude"] = await _db.CHUDEs.ToListAsync();
+            ViewData["NXB"] = await _db.NHAXUATBANs.ToListAsync();
+            return View(products);
             }
 
             [HttpGet]
-            public ActionResult Dangky()
-            {
-            var model = new ProductVM
-            {
-                // Khởi tạo các thuộc tính cần thiết, chẳng hạn như danh sách chủ đề và nhà xuất bản
-                cHUDEs = _db.CHUDEs.ToList(),
-                nxb = _db.NHAXUATBANs.ToList()
-            };
-
-            return View(model);
+        public async Task<ActionResult> DangKy()
+        {
+            ViewData["Chude"] = await _db.CHUDEs.ToListAsync();
+            ViewData["NXB"] = await _db.NHAXUATBANs.ToListAsync();
+            return View(new KHACHHANG());
         }
-            [HttpPost]
+        public ActionResult Dangky()
+        {
+
+            return View();
+        }
+        [HttpPost]
             public ActionResult Dangky(FormCollection collection, KHACHHANG kh)
             {
                 try
@@ -81,19 +82,19 @@ namespace TH_Project.Controllers
                     }
                     else if (String.IsNullOrEmpty(tendn))
                     {
-                        ViewData["Loi2"] = "Phải nhập tên đăng nhập";
+                        ViewData["Loi2"] = "Tên đăng nhập không được để trống";
                     }
                     else if (String.IsNullOrEmpty(matkhau))
                     {
-                        ViewData["Loi3"] = "Phải nhập mật khẩu";
+                        ViewData["Loi3"] = "Mật khẩu không được để trống";
                     }
-                    else if (String.IsNullOrEmpty(matkhaunhaplai))
+                    else if (String.IsNullOrEmpty(matkhaunhaplai) || matkhaunhaplai != matkhau )
                     {
-                        ViewData["Loi4"] = "Phải nhập lại mật khẩu";
+                        ViewData["Loi4"] = "Mật khẩu không chính xác";
                     }
                     else if (String.IsNullOrEmpty(email))
                     {
-                        ViewData["Loi5"] = "Email không được bỏ trống";
+                        ViewData["Loi5"] = "Email không được để trống";
                     }
                     else if (String.IsNullOrEmpty(diachi))
                     {
@@ -101,18 +102,18 @@ namespace TH_Project.Controllers
                     }
                     else if (String.IsNullOrEmpty(dienthoai))
                     {
-                        ViewData["Loi7"] = "Số điện thoại không được bỏ trống";
+                        ViewData["Loi7"] = "Số điện thoại không được để trống";
                     }
                     else
                     {
                         //gán giá trị cho đối tượng mới được tạo (kh)
                         kh.HoTen = hoten;
-                        kh.TaiKhoan = tendn;
-                        kh.MatKhau = matkhau;
+                        kh.Taikhoan = tendn;
+                        kh.Matkhau = matkhau;
                         kh.Email = email;
-                        kh.DiaChiKH = diachi;
-                        kh.DienThoaiKH = dienthoai;
-                        kh.NgaySinh = DateTime.Parse(ngaysinh);
+                        kh.DiachiKH = diachi;
+                        kh.DienthoaiKH = dienthoai;
+                        kh.Ngaysinh = DateTime.Parse(ngaysinh);
                         _db.KHACHHANGs.Add(kh);
                         _db.SaveChanges();
                         return RedirectToAction("Dangnhap");
@@ -125,18 +126,24 @@ namespace TH_Project.Controllers
                 }
                 return this.Dangky();
             }
-            [HttpGet]
-            public ActionResult Dangnhap()
-            {
-            var model = new ProductVM
-            {
-                // Khởi tạo các thuộc tính cần thiết, chẳng hạn như danh sách chủ đề và nhà xuất bản
-                cHUDEs = _db.CHUDEs.ToList(),
-                nxb = _db.NHAXUATBANs.ToList()
-            };
 
-            return View(model);
+        //public ActionResult Dangnhap()
+        //{
+
+        //    return View();
+        //}
+        [HttpGet]
+        public async Task<ActionResult> Dangnhap()
+        {
+            ViewData["Chude"] = await _db.CHUDEs.ToListAsync();
+            ViewData["NXB"] = await _db.NHAXUATBANs.ToListAsync();
+            return View(new KHACHHANG());
         }
+        //public ActionResult Dangnhap()
+        //    {
+
+        //    return View();
+        //}
             [HttpPost]
             public ActionResult Dangnhap(FormCollection collection)
             {
@@ -155,12 +162,12 @@ namespace TH_Project.Controllers
             else
             {
                 // Kiểm tra tài khoản và mật khẩu
-                KHACHHANG kh = _db.KHACHHANGs.SingleOrDefault(n => n.TaiKhoan == tendn && n.MatKhau == matkhau);
+                KHACHHANG kh = _db.KHACHHANGs.SingleOrDefault(n => n.Taikhoan == tendn && n.Matkhau== matkhau);
                 if (kh != null)
                 {
-                    ViewBag.Thongbao = "Đăng nhập thành công";
+                    //ViewBag.Thongbao = "Đăng nhập thành công";
                     Session["Taikhoan"] = kh;
-                    //return RedirectToAction("DatHang", "GioHang");
+                    return RedirectToAction("Index", "Home");
 
                     // Trả về lại view với dữ liệu chủ đề và nhà xuất bản
                     var model = new ProductVM

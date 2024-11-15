@@ -54,6 +54,12 @@
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -130,48 +136,55 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\NguoidungController.cs" />
+    <Compile Include="Data\CHITIETDONTHANG.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CHUDE.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DONDATHANG.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KHACHHANG.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NHAXUATBAN.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QLBANSACHEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANSACHEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QLBANSACHEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QLBANSACHEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANSACHEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SACH.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TACGIA.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\VIETSACH.cs">
+      <DependentUpon>QLBANSACHEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\GioHang.cs" />
     <Compile Include="ViewModel\DetailProductVM.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Data\CHITIETDONTHANG.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\CHUDE.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\DONDATHANG.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Entities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Entities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Entities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Entities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Entities.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\KHACHHANG.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\NHAXUATBAN.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\SACH.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\TACGIA.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,15 +223,16 @@
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\lichsuloainguoi.jpg" />
     <Content Include="Content\images\slider-img.png" />
-    <Content Include="Data\Entities.Context.tt">
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Data\QLBANSACHEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Entities.edmx</DependentUpon>
-      <LastGenOutput>Entities.Context.cs</LastGenOutput>
+      <DependentUpon>QLBANSACHEntities.edmx</DependentUpon>
+      <LastGenOutput>QLBANSACHEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Data\Entities.tt">
+    <Content Include="Data\QLBANSACHEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Entities.edmx</DependentUpon>
-      <LastGenOutput>Entities.cs</LastGenOutput>
+      <DependentUpon>QLBANSACHEntities.edmx</DependentUpon>
+      <LastGenOutput>QLBANSACHEntities.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -237,12 +251,12 @@
     <Content Include="Content\fonts\Helvetica\Helvetica-Bold.ttf" />
     <Content Include="Content\fonts\Helvetica\Helvetica.ttf" />
     <Content Include="Content\fonts\Helvetica\HelveticaLt.ttf" />
-    <EntityDeploy Include="Data\Entities.edmx">
+    <EntityDeploy Include="Data\QLBANSACHEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Entities.Designer.cs</LastGenOutput>
+      <LastGenOutput>QLBANSACHEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Data\Entities.edmx.diagram">
-      <DependentUpon>Entities.edmx</DependentUpon>
+    <Content Include="Data\QLBANSACHEntities.edmx.diagram">
+      <DependentUpon>QLBANSACHEntities.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
@@ -277,6 +291,8 @@
     <Content Include="Views\Nguoidung\Dangnhap.cshtml" />
     <Content Include="Views\GioHang\DatHang.cshtml" />
     <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\GioHang\XacNhanDonHang.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

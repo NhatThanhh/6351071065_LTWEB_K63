@@ -13,12 +13,12 @@ namespace TH_Project.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly QLBANSACHEntities _db;
-        public ProductController(QLBANSACHEntities db)
+        private readonly QLBANSACHEntities2 _db;
+        public ProductController(QLBANSACHEntities2 db)
         {
             _db = db;
         }
-        public ProductController() : this(new QLBANSACHEntities())
+        public ProductController() : this(new QLBANSACHEntities2())
         {
         }
         // GET: Product
@@ -43,6 +43,8 @@ namespace TH_Project.Controllers
             {
                 products.SACHes = await _db.SACHes.ToListAsync();
             }
+            ViewData["Chude"] = products.cHUDEs;
+            ViewData["NXB"] = products.nxb;
 
             return View(products);
         }
@@ -63,7 +65,8 @@ namespace TH_Project.Controllers
             {
                 return HttpNotFound();
             }
-
+            ViewData["Chude"] = productVM.cHUDEs;
+            ViewData["NXB"] = productVM.nxb;
             return View(productVM);
         }
 

@@ -41,11 +41,16 @@
     <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="DiaChiKH" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="DienThoaiKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="NgaySinh" Type="DateTime" Precision="3" />
     <NavigationProperty Name="DONDATHANGs" Relationship="Self.FK_Khachhang" FromRole="KHACHHANG" ToRole="DONDATHANG" />
+    <Property Name="Taikhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Matkhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DiachiKH" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DienthoaiKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ngaysinh" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="NHAXUATBAN">
     <Key>
@@ -56,6 +61,7 @@
     <Property Name="DiaChi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="DienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="SACHes" Relationship="Self.FK_NhaXB" FromRole="NHAXUATBAN" ToRole="SACH" />
+    <Property Name="Diachi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="SACH">
     <Key>
@@ -73,6 +79,7 @@
     <NavigationProperty Name="CHITIETDONTHANGs" Relationship="Self.FK_Sach" FromRole="SACH" ToRole="CHITIETDONTHANG" />
     <NavigationProperty Name="CHUDE" Relationship="Self.FK_Chude" FromRole="SACH" ToRole="CHUDE" />
     <NavigationProperty Name="NHAXUATBAN" Relationship="Self.FK_NhaXB" FromRole="SACH" ToRole="NHAXUATBAN" />
+    <NavigationProperty Name="VIETSACHes" Relationship="QLBANSACHModel.FK_Masach" FromRole="SACH" ToRole="VIETSACH" />
   </EntityType>
   <EntityType Name="TACGIA">
     <Key>
@@ -83,6 +90,7 @@
     <Property Name="Diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="Tieusu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Dienthoai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="VIETSACHes" Relationship="QLBANSACHModel.FK_MaTG" FromRole="TACGIA" ToRole="VIETSACH" />
   </EntityType>
   <Association Name="FK_Donhang">
     <End Role="DONDATHANG" Type="Self.DONDATHANG" Multiplicity="1" />
@@ -172,5 +180,50 @@
       <End Role="NHAXUATBAN" EntitySet="NHAXUATBANs" />
       <End Role="SACH" EntitySet="SACHes" />
     </AssociationSet>
+    <EntitySet Name="VIETSACHes" EntityType="QLBANSACHModel.VIETSACH" />
+    <AssociationSet Name="FK_Masach" Association="QLBANSACHModel.FK_Masach">
+      <End Role="SACH" EntitySet="SACHes" />
+      <End Role="VIETSACH" EntitySet="VIETSACHes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaTG" Association="QLBANSACHModel.FK_MaTG">
+      <End Role="TACGIA" EntitySet="TACGIAs" />
+      <End Role="VIETSACH" EntitySet="VIETSACHes" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="VIETSACH">
+    <Key>
+      <PropertyRef Name="MaTG" />
+      <PropertyRef Name="Masach" />
+    </Key>
+    <Property Name="MaTG" Type="Int32" Nullable="false" />
+    <Property Name="Masach" Type="Int32" Nullable="false" />
+    <Property Name="Vaitro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Vitri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SACH" Relationship="QLBANSACHModel.FK_Masach" FromRole="VIETSACH" ToRole="SACH" />
+    <NavigationProperty Name="TACGIA" Relationship="QLBANSACHModel.FK_MaTG" FromRole="VIETSACH" ToRole="TACGIA" />
+  </EntityType>
+  <Association Name="FK_Masach">
+    <End Type="QLBANSACHModel.SACH" Role="SACH" Multiplicity="1" />
+    <End Type="QLBANSACHModel.VIETSACH" Role="VIETSACH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SACH">
+        <PropertyRef Name="Masach" />
+      </Principal>
+      <Dependent Role="VIETSACH">
+        <PropertyRef Name="Masach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaTG">
+    <End Type="QLBANSACHModel.TACGIA" Role="TACGIA" Multiplicity="1" />
+    <End Type="QLBANSACHModel.VIETSACH" Role="VIETSACH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACGIA">
+        <PropertyRef Name="MaTG" />
+      </Principal>
+      <Dependent Role="VIETSACH">
+        <PropertyRef Name="MaTG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>
